@@ -1,0 +1,27 @@
+1. Qual a importância da etapa de validação de requisitos e os riscos de negligenciá-la?
+Validar requisitos consiste em assegurar que as definições elaboradas correspondam exatamente ao que o cliente espera e necessita para o sistema. Funciona como o último filtro de segurança antes de iniciar a produção intensiva do software.  
+Por que é um passo crucial?
+• Permite identificar lacunas de comunicação entre os envolvidos (stakeholders) e os responsáveis pela análise.  
+• Evita o gasto inútil de recursos ao impedir a criação de um sistema técnico primoroso que não soluciona as demandas reais do negócio.  
+Impactos de sua ausência:  
+• Gastos Elevados com Retrabalho: Ajustar falhas de requisitos durante a codificação ou testes pode custar até 100 vezes mais do que resolvê-las na fase inicial.  
+• Atrasos em Prazos: Entendimentos equivocados geram a necessidade de refazer tarefas, comprometendo o cronograma.  
+• Rejeição pelo Usuário: O produto final corre o risco de ser descartado por falta de utilidade ou complexidade incompatível com a operação.  
+
+
+
+
+2. Quais as cinco verificações fundamentais no processo de validação? Detalhe-as.
+• Teste de Validade: Checa se o requisito atende de fato às demandas do usuário e se as funções propostas realmente auxiliam seu trabalho.  
+• Teste de Consistência: Verifica se não há conflitos entre os requisitos, impedindo que uma regra contradiga outra sob as mesmas condições.  
+• Teste de Completude: Avalia se todas as funcionalidades e limitações foram mapeadas, evitando omissões ou pontos sem definição.  
+• Teste de Realismo: Analisa se a implementação é exequível considerando a tecnologia, o orçamento e o tempo disponíveis.  
+• Verificabilidade: O requisito precisa ser redigido de forma a permitir testes; se não for possível mensurar seu cumprimento, ele é considerado inadequado.  
+
+
+
+3. Quais as três técnicas primordiais de validação? Detalhe-as.
+• Revisão de Requisitos: Uma inspeção minuciosa feita por analistas, desenvolvedores e clientes para detectar erros, falhas ou termos ambíguos nos documentos.  
+• Prototipação: Elaboração de modelos ou "maquetes" que permitem ao usuário testar o conceito do software e confirmar se ele atende às suas expectativas.  
+• Criação de Casos de Teste: Definição dos testes antes mesmo da programação; se um requisito for muito vago para gerar um teste, ele deve ser revisado.  
+Gostaria que eu criasse um mapa mental ou um quadro comparativo resumindo essas técnicas para facilitar sua memorização?
