@@ -1,0 +1,46 @@
+@startuml
+
+class Cliente {
+    - email: String
+    - nome: String
+    - cpf: String
+    - telefone: String
+    - endereco: String
+}
+
+abstract class Reserva {
+    - data: Date
+    - hora: Time
+    - aeroportoOrigem: String
+    - aeroportoDestino: String
+    - valor: double
+    + confirmarPagamento()
+    + realizarCheckin()
+    + cancelarReserva()
+}
+
+class ReservaIda {
+}
+
+class ReservaVolta {
+}
+
+class PassagemAerea {
+    - preco: double
+    - data: Date
+    - hora: Time
+}
+
+' Relacionamentos
+' HST 01: Cliente se cadastra [cite: 121]
+' HST 02/03: Cliente pesquisa e confirma reserva [cite: 122, 123]
+Cliente "1" -- "0..*" Reserva : realiza >
+
+' Herança conforme solicitado 
+Reserva <|-- ReservaIda
+Reserva <|-- ReservaVolta
+
+' Associação com Passagem
+Reserva "1" *-- "1..*" PassagemAerea : contém >
+
+@enduml
