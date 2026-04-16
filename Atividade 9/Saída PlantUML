@@ -1,0 +1,61 @@
+@startuml
+skinparam backgroundColor #fdfdfd
+skinparam roundcorner 10
+skinparam shadowing true
+skinparam handwritten false
+
+skinparam class {
+    BackgroundColor #1A3A5F
+    BorderColor #102A44
+    FontColor #FFFFFF
+    AttributeFontColor #E0E0E0
+    AttributeFontSize 11
+    FontSize 14
+    FontStyle bold
+}
+
+skinparam arrow {
+    Color #1A3A5F
+    Thickness 1.5
+}
+
+class Cliente {
+    - email: String
+    - nome: String
+    - cpf: String
+    - telefone: String
+    - endereco: String
+}
+
+abstract class Reserva <<abstract>> {
+    - data: Date
+    - hora: Time
+    - aeroportoOrigem: String
+    - aeroportoDestino: String
+    - valor: double
+    .. Métodos ..
+    + confirmarPagamento()
+    + realizarCheckin()
+    + cancelarReserva()
+}
+
+class ReservaIda {
+}
+
+class ReservaVolta {
+}
+
+class PassagemAerea {
+    - preco: double
+    - data: Date
+    - hora: Time
+}
+
+Cliente "1" -right-> "0..*" Reserva : realiza >
+
+Reserva <|-- ReservaIda
+Reserva <|-- ReservaVolta
+
+Reserva "1" *-- "1..*" PassagemAerea : contém >
+
+@enduml
